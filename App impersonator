@@ -20,3 +20,4 @@ DELETE FROM fitness_pal
 WHERE id = 4;
 
 SELECT * FROM fitness_pal;
+
