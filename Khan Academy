@@ -1,0 +1,28 @@
+CREATE TABLE restarurant (id INTEGER, name TEXT, city TEXT, rating INTEGER);
+
+INSERT INTO restarurant VALUES (1, 'Eleven Madison Park', 'New York City', 3);
+INSERT INTO restarurant VALUES (2, 'Alinea', 'Chicago', 3);
+INSERT INTO restarurant VALUES (3, 'Le Bernardin', 'New York City', 3);
+INSERT INTO restarurant VALUES (4, 'Per Se', 'New York City', 3);
+INSERT INTO restarurant VALUES (5, 'Daniel', 'New York City', 2);
+INSERT INTO restarurant VALUES (6, 'Addison', 'San Diego', 2);
+INSERT INTO restarurant VALUES (7, 'Atelier Crenn', 'San Francisco', 3);
+INSERT INTO restarurant VALUES (8, 'Benu', 'San Francisco', 3);
+INSERT INTO restarurant VALUES (9, 'French Laundry', 'Yountville', 2);
+INSERT INTO restarurant VALUES (10, 'The Inn at Little Washington', 'Washington',3);
+
+SELECT * FROM restarurant;
+
+SELECT * FROM restarurant
+WHERE city = 'New York City';
+
+SELECT * FROM restarurant
+WHERE rating <3;
+
+SELECT * FROM restarurant
+ORDER BY name;
+
+SELECT * FROM restarurant
+ORDER BY rating desc;
+
+ALTER table restarurant  RENAME TO restaurant;
