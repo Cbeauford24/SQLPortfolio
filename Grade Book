@@ -28,3 +28,4 @@ WHEN number_grade >70 THEN 'C'
 ELSE 'F' END as "letter_grade" 
 FROM student_grades 
 GROUP BY letter_grade;
+
