@@ -340,3 +340,4 @@ AND urban_pop > 1000000
 AND median_age > 40;
 
 SELECT country, AVG(density_per_sq_km) AS avg_density FROM countries_by_population GROUP BY country HAVING avg_density > 1000000;
+
