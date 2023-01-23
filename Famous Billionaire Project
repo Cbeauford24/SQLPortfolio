@@ -21,3 +21,8 @@ INSERT INTO wealth (billionaire_id, net_worth, source_wealth) VALUES (2, "90 bil
 INSERT INTO wealth (billionaire_id, net_worth, source_wealth) VALUES (3, "84 billion", "Berkshire Hathaway");
 INSERT INTO wealth (billionaire_id, net_worth, source_wealth) VALUES (4, "72 billion", "LVMH");
 INSERT INTO wealth (billionaire_id, net_worth, source_wealth) VALUES (5, "71 billion", "Facebook");
+
+SELECT billionaires.fullname, wealth.net_worth
+FROM billionaires
+JOIN wealth
+ON billionaires.id = wealth.billionaire_id;
