@@ -1,2 +1,2 @@
-# SQLprotfolio
+# SQL portfolio
 My SQL portfolio.
